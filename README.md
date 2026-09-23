@@ -16,7 +16,7 @@ C.P. 37800
 
 ## Publicación
 
-El sitio se publica con **GitHub Actions + GitHub Pages**.
+El sitio se publica automáticamente con **GitHub Actions + GitHub Pages** desde la rama `main`.
 
 El workflow está en:
 
