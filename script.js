@@ -15,6 +15,7 @@ document.querySelectorAll('.main-nav a').forEach(link => {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const WHATSAPP_NUMBER = '526146739746';
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
 
@@ -28,8 +29,9 @@ form?.addEventListener('submit', (event) => {
     `Pieza: ${data.get('pieza') || ''}`
   ].join(' ');
 
-  navigator.clipboard?.writeText(mensaje).catch(() => {});
-  statusEl.textContent = 'Solicitud preparada y copiada. En cuanto agreguemos el WhatsApp del negocio, podremos abrir el chat directamente.';
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
+  statusEl.textContent = 'Abriendo WhatsApp con tu solicitud...';
+  window.open(whatsappUrl, '_blank', 'noopener');
 });
 
 const sections = [...document.querySelectorAll('main section[id], header[id]')];
