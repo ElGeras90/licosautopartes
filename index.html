@@ -11,6 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image" href="assets/gallery/silverado-remolque.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/gallery/sedan-taller.webp">
+  <link rel="preload" as="image" href="assets/gallery/dodge-clasica.webp">
+  <link rel="preload" as="image" href="assets/gallery/pickup-restauracion.webp">
+  <link rel="preload" as="image" href="assets/gallery/bmw-remolque.webp">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <style>
@@ -20,9 +25,9 @@
     .carousel-intro{max-width:470px;margin:0;color:#60656d;line-height:1.7}
     .carousel-shell{position:relative;background:#0d0f12;border-radius:22px;padding:18px;box-shadow:0 22px 58px rgba(0,0,0,.22);overflow:hidden}
     .carousel-viewport{overflow:hidden;border-radius:17px;background:#111}
-    .carousel-track{display:flex;transition:transform .48s ease;will-change:transform}
+    .carousel-track{display:flex;transition:transform .72s cubic-bezier(.22,.61,.36,1);will-change:transform}
     .carousel-slide{position:relative;min-width:100%;aspect-ratio:16/9;overflow:hidden;background:#15171a}
-    .carousel-slide img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.96) contrast(1.03)}
+    .carousel-slide img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.96) contrast(1.03);transform:translateZ(0)}
     .slide-overlay{position:absolute;left:0;right:0;bottom:0;padding:28px 28px 24px;background:linear-gradient(transparent,rgba(0,0,0,.84));color:#fff}
     .slide-badge{display:inline-flex;align-items:center;gap:7px;margin-bottom:10px;padding:6px 13px;border-radius:999px;background:rgba(227,27,35,.96);font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
     .slide-overlay h3{margin:0 0 8px;font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:900;text-transform:uppercase;line-height:1}
@@ -82,11 +87,11 @@
           <button class="carousel-btn prev" type="button" aria-label="Imagen anterior">‹</button>
           <div class="carousel-viewport">
             <div class="carousel-track">
-              <article class="carousel-slide active"><img loading="lazy" src="assets/gallery/silverado-remolque.webp" alt="Chevrolet Silverado sobre grúa de plataforma"><div class="slide-overlay"><span class="slide-badge">Camionetas</span><h3>Silverado</h3><p>Unidades y piezas para distintas necesidades.</p></div></article>
-              <article class="carousel-slide"><img loading="lazy" src="assets/gallery/sedan-taller.webp" alt="Sedán gris en reparación dentro del taller"><div class="slide-overlay"><span class="slide-badge">Taller y refacciones</span><h3>Trabajo en proceso</h3><p>Autopartes, rines, suspensión y más.</p></div></article>
-              <article class="carousel-slide"><img loading="lazy" src="assets/gallery/dodge-clasica.webp" alt="Camioneta Dodge clásica azul en el yonke"><div class="slide-overlay"><span class="slide-badge">Clásicos</span><h3>Dodge clásica</h3><p>Piezas difíciles de conseguir para proyectos especiales.</p></div></article>
-              <article class="carousel-slide"><img loading="lazy" src="assets/gallery/pickup-restauracion.webp" alt="Pickup clásica roja en proceso de restauración"><div class="slide-overlay"><span class="slide-badge">Restauración</span><h3>Proyecto clásico</h3><p>Componentes y apoyo para restauraciones automotrices.</p></div></article>
-              <article class="carousel-slide"><img loading="lazy" src="assets/gallery/bmw-remolque.webp" alt="BMW rojo sobre remolque"><div class="slide-overlay"><span class="slide-badge">Autos y piezas</span><h3>BMW</h3><p>Variedad de modelos, piezas y soluciones para tu auto.</p></div></article>
+              <article class="carousel-slide active"><img loading="eager" fetchpriority="high" decoding="async" width="1600" height="900" src="assets/gallery/silverado-remolque.webp" alt="Chevrolet Silverado sobre grúa de plataforma"><div class="slide-overlay"><span class="slide-badge">Camionetas</span><h3>Silverado</h3><p>Unidades y piezas para distintas necesidades.</p></div></article>
+              <article class="carousel-slide"><img loading="eager" decoding="async" width="1600" height="900" src="assets/gallery/sedan-taller.webp" alt="Sedán gris en reparación dentro del taller"><div class="slide-overlay"><span class="slide-badge">Taller y refacciones</span><h3>Trabajo en proceso</h3><p>Autopartes, rines, suspensión y más.</p></div></article>
+              <article class="carousel-slide"><img loading="eager" decoding="async" width="1600" height="900" src="assets/gallery/dodge-clasica.webp" alt="Camioneta Dodge clásica azul en el yonke"><div class="slide-overlay"><span class="slide-badge">Clásicos</span><h3>Dodge clásica</h3><p>Piezas difíciles de conseguir para proyectos especiales.</p></div></article>
+              <article class="carousel-slide"><img loading="eager" decoding="async" width="1600" height="900" src="assets/gallery/pickup-restauracion.webp" alt="Pickup clásica roja en proceso de restauración"><div class="slide-overlay"><span class="slide-badge">Restauración</span><h3>Proyecto clásico</h3><p>Componentes y apoyo para restauraciones automotrices.</p></div></article>
+              <article class="carousel-slide"><img loading="eager" decoding="async" width="1600" height="900" src="assets/gallery/bmw-remolque.webp" alt="BMW rojo sobre remolque"><div class="slide-overlay"><span class="slide-badge">Autos y piezas</span><h3>BMW</h3><p>Variedad de modelos, piezas y soluciones para tu auto.</p></div></article>
             </div>
           </div>
           <button class="carousel-btn next" type="button" aria-label="Siguiente imagen">›</button>
@@ -124,7 +129,7 @@
   <footer class="site-footer"><div class="container footer-row"><p>© <span id="year"></span> Licos Autopartes. Todos los derechos reservados.</p><p>Avenida Poniente #93 · C.P. 37800</p></div></footer>
   <a class="whatsapp-float" href="https://wa.me/524181875373?text=Hola%20Licos%20Autopartes%2C%20quiero%20consultar%20una%20pieza." target="_blank" rel="noopener" aria-label="Contactar a Licos Autopartes por WhatsApp" title="WhatsApp">WA</a>
   <script>
-    (()=>{const carousel=document.querySelector('.carousel-shell');if(!carousel)return;const track=carousel.querySelector('.carousel-track');const slides=[...carousel.querySelectorAll('.carousel-slide')];const dots=[...carousel.querySelectorAll('.carousel-dots button')];const prev=carousel.querySelector('.prev');const next=carousel.querySelector('.next');let i=0,timer;const go=n=>{i=(n+slides.length)%slides.length;track.style.transform=`translateX(-${i*100}%)`;slides.forEach((s,idx)=>s.classList.toggle('active',idx===i));dots.forEach((d,idx)=>d.classList.toggle('active',idx===i));};const play=()=>timer=setInterval(()=>go(i+1),4500);const reset=()=>{clearInterval(timer);play();};prev?.addEventListener('click',()=>{go(i-1);reset();});next?.addEventListener('click',()=>{go(i+1);reset();});dots.forEach((d,idx)=>d.addEventListener('click',()=>{go(idx);reset();}));carousel.addEventListener('mouseenter',()=>clearInterval(timer));carousel.addEventListener('mouseleave',play);let sx=0;carousel.addEventListener('touchstart',e=>sx=e.changedTouches[0].clientX,{passive:true});carousel.addEventListener('touchend',e=>{const diff=sx-e.changedTouches[0].clientX;if(diff>50)go(i+1);if(diff<-50)go(i-1);reset();},{passive:true});go(0);play();})();
+    (()=>{const carousel=document.querySelector('.carousel-shell');if(!carousel)return;const track=carousel.querySelector('.carousel-track');const slides=[...carousel.querySelectorAll('.carousel-slide')];const dots=[...carousel.querySelectorAll('.carousel-dots button')];const prev=carousel.querySelector('.prev');const next=carousel.querySelector('.next');let i=0,timer;const interval=8500;const images=[...carousel.querySelectorAll('.carousel-slide img')];images.forEach(img=>{const preload=new Image();preload.src=img.currentSrc||img.src;});const go=n=>{i=(n+slides.length)%slides.length;track.style.transform=`translateX(-${i*100}%)`;slides.forEach((s,idx)=>s.classList.toggle('active',idx===i));dots.forEach((d,idx)=>d.classList.toggle('active',idx===i));};const play=()=>{clearInterval(timer);timer=setInterval(()=>go(i+1),interval);};const reset=()=>play();prev?.addEventListener('click',()=>{go(i-1);reset();});next?.addEventListener('click',()=>{go(i+1);reset();});dots.forEach((d,idx)=>d.addEventListener('click',()=>{go(idx);reset();}));carousel.addEventListener('mouseenter',()=>clearInterval(timer));carousel.addEventListener('mouseleave',play);let sx=0;carousel.addEventListener('touchstart',e=>sx=e.changedTouches[0].clientX,{passive:true});carousel.addEventListener('touchend',e=>{const diff=sx-e.changedTouches[0].clientX;if(diff>50)go(i+1);if(diff<-50)go(i-1);reset();},{passive:true});go(0);if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)play();})();
   </script>
   <script src="script.js"></script>
 </body>
