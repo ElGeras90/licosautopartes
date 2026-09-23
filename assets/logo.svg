@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 190" role="img" aria-labelledby="title desc">
+  <title id="title">Licos Autopartes</title>
+  <desc id="desc">Logotipo automotriz rojo, negro y blanco para Licos Autopartes</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#e31b23"/>
+      <stop offset="1" stop-color="#b60d14"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10 15)">
+    <path d="M72 15c-7 0-14 1-21 3l-5 18-16 7-17-8-13 22 12 13-3 17-16 9 8 25 18-1 12 12-1 18 25 8 9-16 18-3 13 11 20-16-7-11c8-8 13-19 15-30l13-5-3-27-17-4-8-15-1-16-27-4-8 13c-8-2-15-3-23-3z" fill="url(#g)" opacity=".97"/>
+    <circle cx="74" cy="83" r="50" fill="#fff" stroke="#111" stroke-width="10"/>
+    <path d="M38 83c18-24 42-38 78-37-22 7-39 19-54 37 21-5 44-7 67-3-26 5-50 11-77 25" fill="none" stroke="#111" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(155 26)">
+    <text x="0" y="63" font-family="Arial Black, Arial, sans-serif" font-size="76" font-style="italic" font-weight="900" fill="#101114">LICOS</text>
+    <text x="8" y="111" font-family="Arial Black, Arial, sans-serif" font-size="38" font-style="italic" font-weight="900" letter-spacing="4" fill="#e31b23">AUTOPARTES</text>
+    <text x="10" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="5" fill="#31343a">TU AUTO SIGUE EN EL CAMINO</text>
+  </g>
+</svg>
