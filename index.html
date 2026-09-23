@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Licos Autopartes - Yonke y venta de autopartes usadas. Motores, transmisiones, faros, puertas, defensas, suspensión y más." />
+  <meta name="theme-color" content="#111111" />
+  <title>Licos Autopartes | Tu auto sigue en el camino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Licos Autopartes">
+        <img src="assets/logo.svg" alt="Licos Autopartes" />
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <a class="active" href="#inicio">Inicio</a>
+        <a href="#autopartes">Autopartes</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn-red nav-cta" href="#contacto" aria-label="Ir a contacto">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.2 11.2 0 0 0 12.1.02C5.94.02.92 5 .92 11.15c0 1.96.51 3.87 1.49 5.55L.83 22.47l5.9-1.55a11.2 11.2 0 0 0 5.36 1.37h.01c6.16 0 11.18-4.99 11.18-11.14 0-2.98-1.16-5.78-3.28-7.65Zm-8.4 16.9h-.01a9.28 9.28 0 0 1-4.73-1.29l-.34-.2-3.5.92.94-3.4-.22-.35a9.22 9.22 0 0 1-1.42-4.93c0-5.1 4.16-9.25 9.28-9.25a9.22 9.22 0 0 1 6.57 2.72 9.17 9.17 0 0 1 2.72 6.54c0 5.1-4.17 9.24-9.29 9.24Zm5.08-6.92c-.28-.14-1.65-.81-1.91-.9-.26-.1-.45-.14-.64.14-.19.28-.73.9-.9 1.09-.16.19-.33.21-.61.07-.28-.14-1.18-.43-2.24-1.38a8.38 8.38 0 0 1-1.55-1.92c-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.49h-.54c-.19 0-.49.07-.75.35-.26.28-.98.95-.98 2.32s1 2.7 1.14 2.89c.14.19 1.97 3 4.76 4.21.66.29 1.18.46 1.59.59.67.21 1.27.18 1.75.11.53-.08 1.65-.67 1.89-1.32.23-.65.23-1.21.16-1.32-.07-.12-.26-.19-.54-.33Z"/></svg>
+        Contáctanos
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shadow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">Yonke de confianza</p>
+          <h1 id="hero-title"><span>Licos</span> Autopartes</h1>
+          <p class="hero-tagline">Autopartes usadas, más kilómetros<br>para tu historia</p>
+          <div class="benefits" aria-label="Beneficios">
+            <div class="benefit">
+              <div class="benefit-icon">✓</div>
+              <div><strong>Buenos precios</strong><small>Opciones para tu presupuesto</small></div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon">⚙</div>
+              <div><strong>Gran surtido</strong><small>Distintas marcas y modelos</small></div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon">▰</div>
+              <div><strong>Variedad de marcas</strong><small>Pregunta por disponibilidad</small></div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon">♻</div>
+              <div><strong>Reutiliza y ahorra</strong><small>Segunda vida para las piezas</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="parts-section" id="autopartes">
+      <div class="container">
+        <div class="parts-heading">
+          <div>
+            <p class="section-kicker">Encuentra la pieza</p>
+            <h2>Que necesitas</h2>
+          </div>
+          <a href="#contacto" class="inventory-btn">Ver todo el inventario <span>→</span></a>
+        </div>
+
+        <div class="parts-grid">
+          <article class="part-tile">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1734670502673-dcb7b1596eaa?auto=format&fit=crop&w=700&q=78" alt="Motor de automóvil" />
+            <span>Motores</span>
+          </article>
+          <article class="part-tile">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1740098460497-5cb59a671e11?auto=format&fit=crop&w=700&q=78" alt="Transmisión y caja de cambios" />
+            <span>Transmisiones</span>
+          </article>
+          <article class="part-tile">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1577798329648-f6661c2b8ce9?auto=format&fit=crop&w=700&q=78" alt="Faro de automóvil" />
+            <span>Faros</span>
+          </article>
+          <article class="part-tile">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1714348938110-d3692bc3716a?auto=format&fit=crop&w=700&q=78" alt="Puerta de automóvil" />
+            <span>Puertas</span>
+          </article>
+          <article class="part-tile">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1716304960657-92f7eddc431e?auto=format&fit=crop&w=700&q=78" alt="Defensa de automóvil" />
+            <span>Defensas</span>
+          </article>
+          <article class="part-tile">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1772308005714-976160554238?auto=format&fit=crop&w=700&q=78" alt="Suspensión de automóvil" />
+            <span>Suspensión y más</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-info" id="nosotros">
+      <div class="container info-grid">
+        <div class="about-copy">
+          <p class="light-kicker">Sobre nosotros</p>
+          <h2>Más que un yonke,<br>somos una solución</h2>
+          <p>En <strong>Licos Autopartes</strong> nos dedicamos a la venta de partes de autos usadas en buen estado, con opciones para distintas marcas y modelos. Te ayudamos a encontrar lo que necesitas con atención directa y personalizada.</p>
+          <a class="btn btn-red" href="#contacto">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.2 11.2 0 0 0 12.1.02C5.94.02.92 5 .92 11.15c0 1.96.51 3.87 1.49 5.55L.83 22.47l5.9-1.55a11.2 11.2 0 0 0 5.36 1.37h.01c6.16 0 11.18-4.99 11.18-11.14 0-2.98-1.16-5.78-3.28-7.65Zm-8.4 16.9h-.01a9.28 9.28 0 0 1-4.73-1.29l-.34-.2-3.5.92.94-3.4-.22-.35a9.22 9.22 0 0 1-1.42-4.93c0-5.1 4.16-9.25 9.28-9.25a9.22 9.22 0 0 1 6.57 2.72 9.17 9.17 0 0 1 2.72 6.54c0 5.1-4.17 9.24-9.29 9.24Z"/></svg>
+            Solicitar una pieza
+          </a>
+        </div>
+
+        <div class="location-copy" id="ubicacion">
+          <p class="light-kicker">Nuestra ubicación</p>
+          <div class="location-row">
+            <div class="red-icon">●</div>
+            <div>
+              <strong>Avenida Poniente #93</strong>
+              <span>Presa del Gallinero</span>
+              <span>C.P. 37800</span>
+            </div>
+          </div>
+          <div class="location-row schedule-row">
+            <div class="red-icon">◷</div>
+            <div>
+              <strong>Horarios</strong>
+              <span><b>Lunes a Viernes</b><br>8:00 am a 6:00 pm</span>
+              <span><b>Sábado</b><br>8:00 am a 3:00 pm</span>
+              <span><b>Domingo</b><br>Cerrado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <iframe title="Mapa de Licos Autopartes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Avenida%20Poniente%2093%20Presa%20del%20Gallinero%2037800&output=embed"></iframe>
+          <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Avenida+Poniente+93+Presa+del+Gallinero+37800">Cómo llegar en Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="section-kicker">¿Buscas una pieza?</p>
+          <h2>Cuéntanos qué necesitas</h2>
+          <p>Envíanos la marca, modelo, año y la pieza que buscas. El formulario prepara el mensaje para que puedas copiarlo; cuando agreguemos el número de WhatsApp del negocio podremos abrir el chat directamente.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label>Nombre<input name="nombre" type="text" placeholder="Tu nombre" required></label>
+            <label>Teléfono<input name="telefono" type="tel" placeholder="Tu teléfono" required></label>
+          </div>
+          <div class="form-row">
+            <label>Marca<input name="marca" type="text" placeholder="Ej. Nissan"></label>
+            <label>Modelo / año<input name="modelo" type="text" placeholder="Ej. Versa 2018"></label>
+          </div>
+          <label>Pieza que buscas<textarea name="pieza" rows="5" placeholder="Ej. Faro delantero derecho"></textarea></label>
+          <button class="btn btn-red" type="submit">Preparar solicitud</button>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="eco-strip">
+      <div class="container eco-grid">
+        <img src="assets/logo.svg" alt="Licos Autopartes" class="eco-logo">
+        <div class="eco-item"><strong>♻</strong><span>Autos<br>reciclan</span></div>
+        <div class="eco-item"><strong>🔧</strong><span>Piezas<br>circulan</span></div>
+        <div class="eco-item"><strong>◒</strong><span>El planeta<br>agradece</span></div>
+        <p>El pasado de los autos<br>también mueve el futuro</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Licos Autopartes. Todos los derechos reservados.</p>
+      <p>Avenida Poniente #93 · C.P. 37800</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
