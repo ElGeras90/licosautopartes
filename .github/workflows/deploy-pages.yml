@@ -32,9 +32,9 @@ jobs:
 
       - name: Prepare static site
         run: |
-          mkdir -p _site/assets
+          mkdir -p _site
           cp index.html styles.css script.js _site/
-          cp assets/logo.svg _site/assets/
+          cp -R assets _site/
           touch _site/.nojekyll
 
       - name: Upload GitHub Pages artifact
