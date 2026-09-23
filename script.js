@@ -15,7 +15,7 @@ document.querySelectorAll('.main-nav a').forEach(link => {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const WHATSAPP_NUMBER = '526146739746';
+const WHATSAPP_NUMBER = '524181234567';
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
 
